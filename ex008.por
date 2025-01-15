@@ -1,0 +1,22 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio()
+	{
+		real milhas
+		escreva("\nInforme a distância em milhas: ")
+		leia(milhas)		
+		escreva(milhas," milha(s) equivale a: ",m.arredondar(milhas/0.6214, 2))
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 148; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
