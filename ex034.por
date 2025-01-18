@@ -17,7 +17,7 @@ programa
 		real media=0.0,nota
 		
 		faca{
-			escreva("\nInforme o código de 3 digitos do aluno: ")
+			escreva("\nInforme o código de 3 digitos do aluno ou digite 0 para encerrar: ")
 			leia(codigo)
 			se(codigo==0){
 				pare
@@ -44,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 753; 
+ * @POSICAO-CURSOR = 518; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
