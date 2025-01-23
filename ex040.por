@@ -10,23 +10,31 @@ programa
 	*/
 	funcao inicio()
 	{
-		inteiro x,numeros, par, impar, soma=0, produto=0
+		inteiro x,numeros, par=0, impar=0, soma=0, produto=1
 		escreva("\nInforme 20 valores inteiros e positivos, caso deseje parar digite 0")
-		para(x=0;x<20;x++){
+		para(x=0;x<10;x++){
 			escreva("\n",x+1,"º valor: ")
 			leia(numeros)
-			se(numeros ==0) pare
-			faca{
-				se(numeros%2==0){
-					
+			se(numeros == 0){
+				pare	 
 				}
-				
-					
-			se(numeros < 0) escreva("\nValor inválido...")	
-			}enquanto(numeros > 0)
-			
-			
+			enquanto(numeros < 0){	
+				escreva("\nValor inválido...")
+				escreva("\n",x+1,"º valor: ")
+				leia(numeros)
+				}
+			se(numeros%2==0){			
+				par++
+				produto*=numeros
+				}senao{
+					impar++ 
+					soma+=numeros 			
+				}						
 		}
+		escreva("\nProduto dos pares: ",produto)
+		escreva("\nQuantidade de pares: ",par)
+		escreva("\nSoma dos impares: ",soma)
+		escreva("\nQuantidad de impares: ",impar)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -34,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 612; 
+ * @POSICAO-CURSOR = 492; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
