@@ -4,15 +4,32 @@ programa
 	inclua biblioteca Matematica --> m
 	funcao inicio()
 	{
-		real a,b,s=0.0
+		real A, B, C
 		escreva("\nInforme o valor de A: ")
-		leia(a)
+		leia(A)
 		escreva("\nInforme o valor de B: ")
-		leia(b)
-		escreva("\nValor absoluto A-B: ",calculaAB(a,b))
-	}	
-	funcao real calculaAB(real a, real b){
-		retorne m.valor_absoluto(a-b)
+		leia(B)
+		limpa()
+
+		enquanto(testeAB(A,B)!= verdadeiro){
+			escreva("\nInforme o valor de A: ")
+			leia(A)
+			escreva("\nInforme o valor de B: ")
+			leia(B)
+			limpa()
+
+			
+		}
+		escreva("\nResultado de ",A," ^ ",B,": ",calculaA_B(A,B))
+	}
+	funcao logico testeAB(real a, real b){
+		se(a>b)
+			retorne falso
+		senao
+			retorne verdadeiro
+	}
+	funcao real calculaA_B(real x, real y){
+		retorne m.potencia(x, y)
 	}
 }
 
@@ -24,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 317; 
+ * @POSICAO-CURSOR = 384; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
